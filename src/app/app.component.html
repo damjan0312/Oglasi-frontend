@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+        <app-sidenav-list [isLoggedIn$]="isLoggedIn$" [isLoggedOut$]="isLoggedOut$" (closeSidenav)="sidenav.close()">
+        </app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header [isLoggedIn$]="isLoggedIn$" [isLoggedOut$]="isLoggedOut$" (sidenavToggle)="sidenav.toggle()">
+        </app-header>
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>

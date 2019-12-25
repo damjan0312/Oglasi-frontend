@@ -1,0 +1,41 @@
+<form #f="ngForm">
+<div class="search">
+  <mat-form-field class=" space category">
+    <mat-label>Kategorija </mat-label>
+    <mat-select [(ngModel)]="selectedValue" (change)="changeCategory($event.value)" name="category">
+      <mat-option *ngFor="let category of categories" [value]="category.name">
+        {{category.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="space city">
+    <input type="text" matInput placeholder="Grad" ngModel name="city" #contactInput="ngModel">
+  </mat-form-field>
+  <mat-form-field class="field space">
+    <input type="number" matInput placeholder="Cena od" class="field" ngModel name="priceFrom" #contactInput="ngModel">
+  </mat-form-field>
+  <mat-form-field class="field space">
+    <input type="number" matInput placeholder="Cena do" class="field" ngModel name="priceTo" #contactInput="ngModel">
+  </mat-form-field>
+</div>
+<div class="search">
+  <button type="submit" mat-raised-button color="primary"  (click)="(onSubmit(f))">Pretraži</button>
+</div>
+</form>
+<div class="main-div" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="center">
+  <mat-card *ngFor="let ad of ads$ | async" (update)="onSubmit()" class="item mat-elevation-z10">
+    <mat-card-header>
+      <mat-card-title>{{ad.headline}}</mat-card-title>
+    </mat-card-header>
+    <div class="item">
+      <img mat-card-image [src]="ad.picture">
+    </div>
+    <mat-card-content>
+      <p>{{ad.description}}</p>
+      <p>Kontakt: {{ad.contact}}</p>
+      <p>Cena: {{ad.price}}&euro;</p>
+      <p>Grad: {{ad.city}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+<mat-paginator [pageSizeOptions]="[12,24,48,96]"></mat-paginator>

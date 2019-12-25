@@ -1,0 +1,36 @@
+<section class="add-form ">
+  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="(onSubmit(f))">
+    <mat-form-field>
+      <input type="text" matInput placeholder="Unesite naslov" ngModel name="headline" required
+        #headlineInput="ngModel">
+      <mat-error *ngIf="headlineInput.hasError('required')">Naslov polje je obavezno</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea type="text" matInput placeholder="Unesite opis" ngModel name="description" required
+        #descriptionInput="ngModel"> </textarea>
+      <mat-error *ngIf="descriptionInput.hasError('required')">Opis je obavezan</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Kategorija: </mat-label>
+      <mat-select [(ngModel)]="selectedValue" (ngModelChange)="changeCategory()" name="category">
+        <mat-option *ngFor="let category of categories" [value]="category.id">
+          {{category.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Unesite kontakt" ngModel name="contact" required #contactInput="ngModel">
+      <mat-error *ngIf="contactInput.hasError('required')">Kontakt polje je obavezno</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Unesite grad" ngModel name="city" required #contactInput="ngModel">
+      <mat-error *ngIf="contactInput.hasError('required')">Grad polje je obavezno</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Unesite cenu" ngModel name="price" required #contactInput="ngModel">
+      <mat-error *ngIf="contactInput.hasError('required')">Cena polje je obavezno</mat-error>
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Postavi</button>
+  </form>
+</section>

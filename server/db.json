@@ -1,0 +1,327 @@
+{
+  "user": [
+    {
+      "name": "Stefan",
+      "lastName": "Mladenovic",
+      "email": "stefan@gmail.com",
+      "password": "stefan",
+      "id": 1
+    },
+    {
+      "name": "Aca",
+      "lastName": "Aca",
+      "email": "aca@gmail.com",
+      "password": "acaaca",
+      "id": 2
+    },
+    {
+      "name": "Marko",
+      "lastName": "Markovic",
+      "email": "marko@gmail.com",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "name": "Zarko",
+      "lastName": "markovic",
+      "email": "zarko@gmail.com",
+      "password": "marko1",
+      "id": 4
+    },
+    {
+      "name": "Pera",
+      "lastName": "Peric",
+      "email": "pera@gmail.com",
+      "password": "perapera",
+      "id": 5
+    }
+  ],
+  "ads": [
+    {
+      "headline": "Prodajem stene",
+      "description": "Cistokrvni nemacki ovcar. Staro dva meseca",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 1,
+      "contact": "0610234568",
+      "city": "Nis",
+      "price": "100",
+      "id": 1
+    },
+    {
+      "headline": "Hrana za papagaja",
+      "description": "Vitaminska hrana. Veoma povoljo. Cena je za kilogram",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png",
+      "category": "Hrana za ljubimca",
+      "userId": 1,
+      "contact": "0602314698",
+      "city": "Nis",
+      "price": "1",
+      "id": 2
+    },
+    {
+      "headline": "Kucica za psa",
+      "description": "Od kvalitetnog materijala vrlo izdrzljiva",
+      "picture": "https://previews.123rf.com/images/spinchuk/spinchuk1711/spinchuk171100205/89708442-hand-drawn-doodle-pets-stuff-pets-accessories-pet-equipment-hand-drawn-illustration-sketch-style-car.jpg",
+      "category": "Oprema za ljubimca",
+      "userId": 1,
+      "contact": "0610234568",
+      "city": "Nis",
+      "price": "50",
+      "id": 3
+    },
+    {
+      "headline": "Papagaj na prodaji",
+      "description": "Star godinu dana. Zna da govori",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 1,
+      "contact": "0610234568",
+      "city": "Beograd",
+      "price": "150",
+      "id": 4
+    },
+    {
+      "headline": "Ogrlice za psa",
+      "description": "Kvalitetne i povoljne",
+      "picture": "https://previews.123rf.com/images/spinchuk/spinchuk1711/spinchuk171100205/89708442-hand-drawn-doodle-pets-stuff-pets-accessories-pet-equipment-hand-drawn-illustration-sketch-style-car.jpg",
+      "category": "Oprema za ljubimca",
+      "userId": 2,
+      "contact": "060232456",
+      "city": "Sombor",
+      "price": "5",
+      "id": 5
+    },
+    {
+      "headline": "Hrana za macke",
+      "description": "Visokoproteinska organska hrana",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png",
+      "category": "Hrana za ljubimca",
+      "userId": 2,
+      "contact": "0610234568",
+      "city": "Prokuplje",
+      "price": "20",
+      "id": 6
+    },
+    {
+      "headline": "Sibirska macka",
+      "description": "Stara godinu dana",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 2,
+      "contact": "0610234568",
+      "city": "Nis",
+      "price": "80",
+      "id": 7
+    },
+    {
+      "headline": "Hrana za hrcka",
+      "description": "Cena je za kilogram",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png",
+      "category": "Hrana za ljubimca",
+      "userId": 2,
+      "contact": "0610234568",
+      "city": "Pirot",
+      "price": "2",
+      "id": 8
+    },
+    {
+      "headline": "Prodajem ogrlice za pse",
+      "description": "U raznim bojama i velicinama. Vrlo kvalitetne. Isporuka brzom postom",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 1,
+      "contact": "0602934455",
+      "city": "Zrenjanin",
+      "price": "10",
+      "id": 9
+    },
+    {
+      "headline": "Na prodaju akvarijum",
+      "description": "Velicine 120x50x30 cm. Uz akvarijum ide i prateca oprema.",
+      "picture": "https://previews.123rf.com/images/spinchuk/spinchuk1711/spinchuk171100205/89708442-hand-drawn-doodle-pets-stuff-pets-accessories-pet-equipment-hand-drawn-illustration-sketch-style-car.jpg",
+      "category": "Oprema za ljubimca",
+      "userId": 1,
+      "contact": "0602553489",
+      "city": "Begorad",
+      "price": "250",
+      "id": 10
+    },
+    {
+      "headline": "Pomeranci spic Boo",
+      "description": "Boo spremni za nove vlasnike! Stenci su odnegovani vakcinisani sa kompletnom kategorijom",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 5,
+      "contact": "064253253",
+      "city": "Beograd",
+      "price": "500",
+      "id": 11
+    },
+    {
+      "headline": "GPS traker za lovacke pse",
+      "description": "Specijalna ogrlica za lovacke pse gonice. Ne dozvolite da izgubite psa !",
+      "picture": "https://previews.123rf.com/images/spinchuk/spinchuk1711/spinchuk171100205/89708442-hand-drawn-doodle-pets-stuff-pets-accessories-pet-equipment-hand-drawn-illustration-sketch-style-car.jpg",
+      "category": "Oprema za ljubimca",
+      "userId": 5,
+      "contact": "0645553555",
+      "city": "Beograd",
+      "price": "60",
+      "id": 12
+    },
+    {
+      "headline": "Rucno hranjeni papagaji vise vrsta",
+      "description": "Primamo rezervacije za rucno hranjene papagaje. Za vise informacija poziv!",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 5,
+      "contact": "0602322345",
+      "city": "Leskovac",
+      "price": "1",
+      "id": 13
+    },
+    {
+      "headline": "Akvarijum 200 litara sa 3D pozadinom",
+      "description": "Akvarijum ima ugradjenu komoru za filter, haubu za rasvetu, unikatnu 3D pozadinu. Dimenzije 80x43x59cm.",
+      "picture": "https://previews.123rf.com/images/spinchuk/spinchuk1711/spinchuk171100205/89708442-hand-drawn-doodle-pets-stuff-pets-accessories-pet-equipment-hand-drawn-illustration-sketch-style-car.jpg",
+      "category": "Oprema za ljubimca",
+      "userId": 5,
+      "contact": "0610234568",
+      "city": "Beograd",
+      "price": "200",
+      "id": 14
+    },
+    {
+      "headline": "Tigrice papagaji",
+      "description": "Velika ponuda zdavih tigrica. Imamo veliki izbora boja tokom cele godine.",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 5,
+      "contact": "0611111111",
+      "city": "Nis",
+      "price": "7",
+      "id": 15
+    },
+    {
+      "headline": "Francuska hrana za pse NUTRIVET",
+      "description": "Nutivet- francuska hrana za pse i macke ultra premium kvalitet. Sa i bez zitarica. Cena je za kilogram",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png",
+      "category": "Hrana za ljubimca",
+      "userId": 5,
+      "contact": "0622583456",
+      "city": "Subotica",
+      "price": "10",
+      "id": 16
+    },
+    {
+      "headline": "Patuljasti zecevi",
+      "description": "Na prodaju mladi patuljasti zecevi, uzrasta 1.5 mesec. 100% cista rasa, rastu do 1.5 kg.",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 5,
+      "contact": "0610234568",
+      "city": "Novi Sad",
+      "price": "8",
+      "id": 17
+    },
+    {
+      "headline": "Plavi francuski buldog",
+      "description": "Odgajivacnica EmpireBullz Belgrade nudi stence ostenjene 10.09.2019. 5 muzjaka i jedna zenka",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 5,
+      "contact": "0610234568",
+      "city": "Beograd",
+      "price": "300",
+      "id": 18
+    },
+    {
+      "headline": "Nutrivet INNE: Wild Ten Fish, hrana za macke",
+      "description": "Kompletna hrana za macke od 10 vrsta okeanskih riba za sve uzraste i rase.",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png",
+      "category": "Hrana za ljubimca",
+      "userId": 5,
+      "contact": "0610234568",
+      "city": "Beograd",
+      "price": "64",
+      "id": 19
+    },
+    {
+      "headline": "Premio kolutici od piletine i ribe 75 g",
+      "description": "Proizvodjac Trixie\n80% piletina, 15% riba",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png",
+      "category": "Hrana za ljubimca",
+      "userId": 5,
+      "contact": "0610234568",
+      "city": "Beograd",
+      "price": "4",
+      "id": 20
+    },
+    {
+      "headline": "Stenci samojeda",
+      "description": "Na prodaju stenci samojeda, odlicnih izlozbenih karakteristika od kvalitetnog roditelja.",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg",
+      "category": "Ljubimac",
+      "userId": 5,
+      "contact": "0610234568",
+      "city": "Nis",
+      "price": "300",
+      "id": 21
+    },
+    {
+      "headline": "Premio pilece poslastice za pse 100g",
+      "description": "Proizvodjac: Trixie \n65% meso",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png",
+      "category": "Hrana za ljubimca",
+      "userId": 5,
+      "contact": "0610234568",
+      "city": "Beograd",
+      "price": "4",
+      "id": 22
+    },
+    {
+      "headline": "Mini Hearts poslastice za pse",
+      "description": "Proizvodjac: Trixie \nSa piletinom, jagnjetinom i lososom",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png",
+      "category": "Hrana za ljubimca",
+      "userId": 5,
+      "contact": "0610234568",
+      "city": "Nis",
+      "price": "3",
+      "id": 23
+    },
+    {
+      "headline": "Kucice za pse",
+      "description": "Kucice za pse svih velicina, izradjene od drvenih poluoblica sa termoizolacijom.Mogucnost skidanja krova.",
+      "picture": "https://previews.123rf.com/images/spinchuk/spinchuk1711/spinchuk171100205/89708442-hand-drawn-doodle-pets-stuff-pets-accessories-pet-equipment-hand-drawn-illustration-sketch-style-car.jpg",
+      "category": "Oprema za ljubimca",
+      "userId": 5,
+      "contact": "0612932422",
+      "city": "Novi Sad",
+      "price": "50",
+      "id": 24
+    }
+  ],
+  "category": [
+    {
+      "id": 0,
+      "name": "",
+      "picture": ""
+    },
+    {
+      "id": 1,
+      "name": "Ljubimac",
+      "picture": "https://www.brantcountyspca.com/wp-content/uploads/cache/images/remote/i0-wp-com/animals-4133566325.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Oprema za ljubimca",
+      "picture": "https://previews.123rf.com/images/spinchuk/spinchuk1711/spinchuk171100205/89708442-hand-drawn-doodle-pets-stuff-pets-accessories-pet-equipment-hand-drawn-illustration-sketch-style-car.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Hrana za ljubimca",
+      "picture": "http://www.fetchingfoods.com/wp-content/uploads/2016/10/anima-1.png"
+    }
+  ]
+}

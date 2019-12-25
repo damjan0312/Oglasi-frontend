@@ -1,0 +1,6 @@
+<div class="main-div" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="center">
+  <mat-card *ngFor="let ad of myAds" class="item mat-elevation-z10">
+    <app-edit-ad [ad]="ad"></app-edit-ad>
+  </mat-card>
+
+</div>

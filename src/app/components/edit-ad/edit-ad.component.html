@@ -1,0 +1,9 @@
+<mat-card-header>
+  <mat-card-title>{{ad.headline}}</mat-card-title>
+</mat-card-header>
+<img mat-card-image [src]="ad.picture">
+<mat-card-content>
+  <p>{{ad.description}}</p>
+  <p>Kontakt: {{ad.contact}}</p>
+</mat-card-content>
+<button mat-raised-button color="primary" (click)="delete()">Obrisi</button>

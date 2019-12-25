@@ -1,0 +1,17 @@
+<section>
+  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="(onSubmit(f))">
+    <mat-form-field>
+      <input type="email" matInput placeholder="Unesite Email" ngModel name="email" email required
+        #emailInput="ngModel">
+      <mat-error *ngIf="emailInput.hasError('required')">Email je obavezan</mat-error>
+      <mat-error *ngIf="!emailInput.hasError('required')">Email je nepravilno unesen</mat-error>
+    </mat-form-field>
+    <mat-form-field hintLabel="Lozinka mora da bude 6 karaktera ili vise">
+      <input type="password" matInput placeholder="Unesite Lozinku" #pwInput="ngModel" ngModel name="password" required
+        minlength="6">
+      <mat-hint align="end"></mat-hint>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Prijavi se</button>
+    <label id="error"> </label>
+  </form>
+</section>

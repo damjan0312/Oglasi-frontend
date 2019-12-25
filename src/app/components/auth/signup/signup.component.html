@@ -1,0 +1,28 @@
+<section class="signup-form ">
+  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="(onSubmit(f))">
+    <mat-form-field>
+      <input type="text" matInput placeholder="Unesite ime" ngModel name="name" required #nameInput="ngModel">
+      <mat-error *ngIf="nameInput.hasError('required')">Ime je obavezno</mat-error>
+      <mat-error *ngIf="!nameInput.hasError('required')">Ime je nepravilno uneseno</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Unesite prezime" ngModel name="lastName" required
+        #lastnameInput="ngModel">
+      <mat-error *ngIf="lastnameInput.hasError('required')">Prezime je obavezno</mat-error>
+      <mat-error *ngIf="!lastnameInput.hasError('required')">Prezime je nepravilno uneseno</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="email" matInput placeholder="Unesite Email" ngModel name="email" email required
+        #emailInput="ngModel">
+      <mat-error *ngIf="emailInput.hasError('required')">Email je obavezan</mat-error>
+      <mat-error *ngIf="!emailInput.hasError('required')">Email je nepravilno unesen</mat-error>
+    </mat-form-field>
+    <mat-form-field hintLabel="Lozinka mora da bude 6 karaktera ili vise">
+      <input type="password" matInput placeholder="Unesite Lozinku" #pwInput="ngModel" ngModel name="password" required
+        minlength="6">
+      <mat-hint align="end"></mat-hint>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Registruj se</button>
+    <label id="error"> </label>
+  </form>
+</section>
