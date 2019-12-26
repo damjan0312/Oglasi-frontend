@@ -34,6 +34,13 @@
       "email": "pera@gmail.com",
       "password": "perapera",
       "id": 5
+    },
+    {
+      "name": "pedja",
+      "lastName": "mihaj",
+      "email": "pedja@gmail.com",
+      "password": "pedja123",
+      "id": 6
     }
   ],
   "ads": [
