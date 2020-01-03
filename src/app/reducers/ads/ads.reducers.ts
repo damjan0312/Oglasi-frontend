@@ -25,7 +25,10 @@ export function adsReducer(state = intialAdsState, action: AdsActions): AdsState
             return adapter.addAll(action.payload.ads, { ...state, allAdsLoaded: true });
 
         case AdsActionTypes.AddAd:
-            return adapter.addOne(action.payload.ad, state);
+            {
+                console.log("ads reducers", action.payload.ad, state);
+                return adapter.addOne(action.payload.ad, state);
+            }
 
         case AdsActionTypes.DeleteAd:
             return adapter.removeOne(action.payload.id, state);

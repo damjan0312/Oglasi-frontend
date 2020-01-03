@@ -5,12 +5,12 @@ import { Ad } from "../models/ad";
 import { adsUrl } from "server/server";
 import { Store, select } from "@ngrx/store";
 import { AppState } from "../reducers";
-import { selectAllAds } from "../selectors/ad.selector";
+import { selectAllAds, selectUserId } from "../selectors/ad.selector";
 import { map } from "rxjs/operators";
 
 @Injectable()
 export class AdsService {
-  constructor(private http: HttpClient, private store: Store<AppState>) {}
+  constructor(private http: HttpClient, private store: Store<AppState>) { }
 
   getAllAds(): Observable<Ad[]> {
     const headerDict = {
@@ -32,8 +32,9 @@ export class AdsService {
     contact: string,
     city: string,
     price: number
-  ): Observable<Ad> {
-    return this.http.post(adsUrl + "add", {
+  ): Observable<any> {
+
+    return this.http.post(adsUrl + "/add", {
       headline,
       description,
       picture,
@@ -43,6 +44,7 @@ export class AdsService {
       city,
       price
     });
+
   }
 
   deleteAd(id: string): Observable<Ad> {
@@ -95,7 +97,8 @@ export class AdsService {
     const ads$ = this.store.pipe(select(selectAllAds));
 
     ads$.subscribe(ads => {
-      const id = JSON.parse(localStorage.getItem("user"))[0].id;
+      const id = selectUserId();
+      console.log("myads", ads);
       myAds = ads.filter(ad => ad.userId === id);
       return myAds;
     });

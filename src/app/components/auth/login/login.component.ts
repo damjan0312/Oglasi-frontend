@@ -27,21 +27,21 @@ export class LoginComponent implements OnInit {
     this.auth.login(val.email, val.password)
       .pipe(
         tap(user => {
-          if(Object.entries(user).length ===1 )
-          {
-            this.store.dispatch(new Login({user}));
+          console.log(user);
+          if (user !== null && user !== undefined) {
+            this.store.dispatch(new Login({ user }));
             this.router.navigateByUrl('/');
           }
-          else{
-            document.getElementById("error").innerHTML="Email i lozinka su nepostojeci!";
+          else {
+            document.getElementById("error").innerHTML = "Email i lozinka su nepostojeci!";
           }
-          
+
         })
       )
       .subscribe(
         noop,
-        () => document.getElementById("error").innerHTML="Email i lozinka su nepostojeci!"
-            
+        () => document.getElementById("error").innerHTML = "Email i lozinka su nepostojeci!"
+
       );
   }
 

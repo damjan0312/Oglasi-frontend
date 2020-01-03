@@ -12,14 +12,16 @@ export const selectAllAds = createSelector(
 
 
 
-export const allAdsLoaded= createSelector(
-    selectAdsState,
-    adsState => adsState.allAdsLoaded
+export const allAdsLoaded = createSelector(
+  selectAdsState,
+  adsState => adsState.allAdsLoaded
 );
 
-export const selectUserId= ()=>{
-  const userData = JSON.parse( localStorage.getItem("user"));
-  return userData[0].id;
+export const selectUserId = () => {
+
+  const userData = JSON.parse(localStorage.getItem("user"))["id"];
+  // console.log(userData);
+  return userData;
 }
 
 
