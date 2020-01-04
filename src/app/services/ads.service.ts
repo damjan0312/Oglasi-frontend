@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Observable, of } from "rxjs";
 import { Ad } from "../models/ad";
 import { adsUrl } from "server/server";
@@ -47,9 +47,22 @@ export class AdsService {
 
   }
 
-  deleteAd(id: string): Observable<Ad> {
-    const url = `${adsUrl}/${id}`;
-    return this.http.delete(url);
+  deleteAd(id: string, category: string): Observable<any> {
+    const url = `${adsUrl}/delete`;
+
+    const options = {
+      header: new HttpHeaders({
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Headers": "Content-Type"
+      }),
+      params: {
+        id: id,
+        category: category
+      }
+    }
+
+    return this.http.delete(url, options);
   }
 
   searchAds(ads: Ad[], search): Observable<Ad[]> {
@@ -60,36 +73,28 @@ export class AdsService {
       search.priceTo === ""
     )
       return of(ads);
-    const searchedAds = ads.filter(ad => this.matching(ad, search) === true);
-    return of(searchedAds);
+
+    const searchedAds = this.matching(search);
+    return searchedAds;
   }
 
-  matching(ad: Ad, search) {
-    if (
-      ad.category.includes(search.category) ||
-      search.category === undefined
-    ) {
-      if (
-        ad.city.includes(search.city) ||
-        search.city === "" ||
-        search.city === undefined
-      ) {
-        if (
-          search.priceFrom <= ad.price ||
-          search.priceFrom === "" ||
-          search.priceFrom === undefined
-        ) {
-          if (
-            search.priceTo >= ad.price ||
-            search.priceTo === "" ||
-            search.priceTo === undefined
-          ) {
-            return true;
-          }
-        }
+  matching(search): Observable<any> {
+    const options = {
+      header: new HttpHeaders({
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Headers": "Content-Type"
+      }),
+      params: {
+        category: search.category,
+        city: search.city,
+        priceFrom: search.priceFrom,
+        priceTo: search.priceTo
       }
     }
-    return false;
+
+    console.log('search', search);
+    return this.http.get(`${adsUrl}/search`, options);
   }
 
   myAds(): Ad[] {

@@ -55,6 +55,7 @@ export class AddAdComponent implements OnInit {
       category[0].name, userid, val.contact, val.city, val.price)
       .pipe(
         tap(res => {
+          console.log(res);
           if (res !== "") {
             let ad: Ad = {
               headline: val.headline,

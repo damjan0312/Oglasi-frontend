@@ -25,7 +25,7 @@ export class EditAdComponent implements OnInit {
   delete() {
     const id = this.ad.id;
     this.store.dispatch(new DeleteAd({ id }))
-    this.adsService.deleteAd(this.ad.id)
+    this.adsService.deleteAd(this.ad.id, this.ad.category)
       .subscribe(
         noop,
         () => console.log("greska")
